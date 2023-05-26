@@ -17,6 +17,6 @@ mod balance {
     #[external]
     fn write(account: ContractAddress, new_balance: u256){
         balances::write(account, new_balance);
-        Update(new_balance)
+        UpdatedBalance(new_balance)
     }
 }
